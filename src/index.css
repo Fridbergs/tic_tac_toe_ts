@@ -9,13 +9,10 @@ body {
   margin: 0;
 }
 
-.App {
-  text-align: center;
-}
-
 /* Styles for the board and squares */
 .board-row {
   display: flex;
+  gap: 1em;
 }
 
 .square {
@@ -25,13 +22,14 @@ body {
   border: 2px solid #999;
   font-size: 24px;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 25px;
   text-align: center;
   cursor: pointer;
+  color: black; /* Säkerställ att textfärgen är konsekvent */
 }
 
-.square:focus {
-  outline: none;
+.square:active {
+  background-color: #ddd; /* Visa en visuell feedback när elementet är active */
 }
 
 .status {
@@ -51,9 +49,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
-}
-
-button:focus {
-  outline: none;
+  background-color: #cbdef1;
 }
