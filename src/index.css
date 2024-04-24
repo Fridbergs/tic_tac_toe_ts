@@ -1,4 +1,3 @@
-/* Global styles */
 body {
   font-family: "Arial", sans-serif;
   display: flex;
@@ -9,7 +8,6 @@ body {
   margin: 0;
 }
 
-/* Styles for the board and squares */
 .board-row {
   display: flex;
   gap: 1em;
@@ -25,18 +23,17 @@ body {
   line-height: 25px;
   text-align: center;
   cursor: pointer;
-  color: black; /* Säkerställ att textfärgen är konsekvent */
+  color: black;
 }
 
 .square:active {
-  background-color: #ddd; /* Visa en visuell feedback när elementet är active */
+  background-color: #ddd;
 }
 
 .status {
   margin-bottom: 10px;
 }
 
-/* Button styles */
 button {
   margin-top: 20px;
   padding: 8px 16px;
